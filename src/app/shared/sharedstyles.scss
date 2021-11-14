@@ -1,10 +1,11 @@
 *{
+    margin:0;
     font-family: 'Roboto', sans-serif;
+    color: rgb(47, 48, 79);
 }
 
 article {
-    margin-left: 1rem;
-    margin-top: 2rem; 
+    margin: 2rem;
     display:flex;
     align-items: center;
 }
@@ -15,6 +16,6 @@ img {
     width: 300px;
 }
 
-p {
-    padding-right: 2rem;
+h3, p {
+    padding: 1rem;
 }

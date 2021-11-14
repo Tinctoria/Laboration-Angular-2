@@ -10,6 +10,8 @@ import { WhatIsSpaComponent } from './pages/what-is-spa/what-is-spa.component';
 import { AngularArcitectureComponent } from './pages/angular-arcitecture/angular-arcitecture.component';
 import { WhatIsTypescriptComponent } from './pages/what-is-typescript/what-is-typescript.component';
 import { DifferencesSpaTraditionalComponent } from './pages/differences-spa-traditional/differences-spa-traditional.component';
+import { KontaktFormComponent } from './about-me/kontakt-form/kontakt-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { DifferencesSpaTraditionalComponent } from './pages/differences-spa-trad
     WhatIsSpaComponent,
     AngularArcitectureComponent,
     WhatIsTypescriptComponent,
-    DifferencesSpaTraditionalComponent
+    DifferencesSpaTraditionalComponent,
+    KontaktFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

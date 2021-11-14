@@ -1,0 +1,56 @@
+ form {
+     margin-left: 1rem;
+     padding: 0.5rem;
+     margin-top: 1rem; 
+     display: flex; 
+     flex-direction: column;
+     width: 50%;
+     background-color: rgb(177, 197, 235);
+     border-radius: 5px;
+ }
+
+ .btn-skicka{
+     padding: 0.4rem;
+     margin-top: 0.5rem;
+     border: none;
+     border-radius: 5px;
+     background-color: #46629c;
+     color:white;
+ }
+
+.btn-skicka:hover {
+    background-color: #25427a;
+}
+
+ label {
+     margin-top: 0.5rem;
+     font-size: small;
+     font-weight: bold;
+    }
+
+input, textarea{
+    border: none;
+    background-color: cornsilk;
+    padding:0.2rem;
+}
+input:focus-visible, textarea:focus-visible {
+    outline: none;
+    border: 1px solid #25427a;
+}
+.btn-div {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.btn-avbryt {
+    
+    padding: 0.4rem;
+     margin-top: 0.5rem;
+     border: none;
+     border-radius: 5px;
+     background-color: rgb(219, 69, 99);
+     color:white;
+}
+.btn-avbryt:hover {
+    background-color: rgb(172, 24, 54);
+}
