@@ -1,11 +1,21 @@
+.content-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.article-wrapper {
+    flex:4;
+}
+
 .form-wrapper {
+    flex:2;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .form-wrapper>div {
-    width: 40%; 
+    width: 70%; 
 }
 
 button {    
@@ -18,8 +28,4 @@ button {
 
 button:hover {
     background-color: #25427a;
-}
-
-article {
-    width: 80%;
 }
