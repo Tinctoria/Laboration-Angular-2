@@ -9,9 +9,10 @@ import { WhatIsSpaComponent } from './pages/what-is-spa/what-is-spa.component';
 import { WhatIsTypescriptComponent } from './pages/what-is-typescript/what-is-typescript.component';
 
 const routes: Routes = [
-  {path: '', component: AboutMeComponent, children: [
+  {path: 'home', component: AboutMeComponent, children: [
     { path: 'kontakt-form', component: KontaktFormComponent}
   ]},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'what-is-angular', component: WhatIsAngularComponent},
   {path: 'what-is-spa', component: WhatIsSpaComponent},
   {path: 'angular-architecture', component: AngularArcitectureComponent},

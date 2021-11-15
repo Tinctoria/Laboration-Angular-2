@@ -1,6 +1,14 @@
-button {
-    margin-left: 1rem;
-    
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-wrapper>div {
+    width: 40%; 
+}
+
+button {    
     background-color: #46629c;
     color: white; 
     padding: 0.5rem;
@@ -10,4 +18,8 @@ button {
 
 button:hover {
     background-color: #25427a;
+}
+
+article {
+    width: 80%;
 }

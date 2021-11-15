@@ -1,16 +1,19 @@
-<form>
-<label for="name">Ditt namn:  </label>
-<input type="text" id="name">
+<form (ngSubmit)="onSend()" #f="ngForm">
+    <label for="name">Namn:</label>
+    <input type="text" id="name" ngModel name="name" required #name="ngModel">
+    <span *ngIf="!name.valid && name.touched">Ange ett namn!</span> 
+    
+    <label type="email" id="email">Email:</label>
+    <input type="email" id="email" ngModel name="email" required email #email="ngModel">
+    <span *ngIf="!email.valid && email.touched">Ange en giltig email adress!</span> 
+    
+    <label for="message">Meddelande: </label>
+    <textarea id="message" rows="3" ngModel name="message" required #message="ngModel"> </textarea>
+    <span *ngIf="!message.valid && message.touched">Du har inte skrivit något meddelande!</span> 
 
-<label type="email" id="email">Email:</label>
-<input type="email" id="email">
+    <div class="btn-div">
+        <button class="btn-avbryt" type="button" (click)="onAvbryt()">Avbryt</button>
+        <button class="btn-skicka" type="submit" [disabled]="!f.valid">Skicka</button>
+    </div>
 
-<label for="message">Meddelande: </label>
-<textarea id="message" rows="3"> </textarea>
-
-<div class="btn-div"> 
-    <button class="btn-avbryt" type="button">Avbryt</button>
-    <button class="btn-skicka" type="submit">Skicka</button>
-</div>
-
-</form> 
+</form>
