@@ -19,3 +19,15 @@ img {
 h3, p {
     padding: 1rem;
 }
+
+button {    
+    background-color: #46629c;
+    color: white; 
+    padding: 0.5rem;
+    border-radius: 5px;
+    border-style: none;
+}
+
+button:hover {
+    background-color: #25427a;
+}

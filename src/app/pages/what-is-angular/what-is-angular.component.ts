@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EditService } from 'src/app/edit.service';
 
 @Component({
   selector: 'app-what-is-angular',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhatIsAngularComponent implements OnInit {
 
-  constructor() { }
+  constructor(private editService: EditService) { }
+  
+  questions = this.editService.getQuestions();
+  question=this.questions[1].question;
+  answer=this.questions[1].answer;
 
   ngOnInit(): void {
   }

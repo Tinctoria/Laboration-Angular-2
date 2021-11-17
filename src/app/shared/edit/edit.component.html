@@ -1,0 +1,18 @@
+<form class="edit-wrapper" [id]="[id]">
+    <div class="button-wrapper">
+        <button type="button" (click)="editMode=!editMode">Ändra</button>
+        <button type="submit" *ngIf="editMode" style="background-color: rgb(48, 139, 48);" (click)="onSave()">Spara</button>
+    </div>
+
+
+    <div *ngIf="editMode" class="input-wrapper">
+        <label for="question"> Ändra frågan: </label>
+        <input name="question" id="question" type="text" placeholder="{{ this.question.question }}">
+
+        <label for="answer"> Ändra svaret: </label>
+        <textarea id="answer" name="answer" rows="5" cols="30"> {{ this.question.answer }} </textarea>
+    </div>
+</form>
+
+
+

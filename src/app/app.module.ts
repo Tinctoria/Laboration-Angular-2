@@ -12,6 +12,7 @@ import { WhatIsTypescriptComponent } from './pages/what-is-typescript/what-is-ty
 import { DifferencesSpaTraditionalComponent } from './pages/differences-spa-traditional/differences-spa-traditional.component';
 import { KontaktFormComponent } from './about-me/kontakt-form/kontakt-form.component';
 import { FormsModule } from '@angular/forms';
+import { EditComponent } from './shared/edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     AngularArcitectureComponent,
     WhatIsTypescriptComponent,
     DifferencesSpaTraditionalComponent,
-    KontaktFormComponent
+    KontaktFormComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,

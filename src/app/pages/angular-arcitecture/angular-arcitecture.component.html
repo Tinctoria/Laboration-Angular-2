@@ -1,27 +1,8 @@
 <article>
     <div>
-        <h3>Beskriv de fundamentala delarna i Angulars arkitektur</h3>
-        <p>
-            Angular består av komponenter som är organiserade i så kallde NgModules. Dessa moduler hanterar koden och
-            ger den funktionalitet. Olika moduler kan importera och använda funktionalitet från andra moduler
-            <br>
-            <br>
-            Varje komponent definierar en klass som innehåller data om hur klassen är uppbyggd och används. Den är sedan
-            kopplad till en så kallad template, en html-fil som beskriver hur data skall renderas ut i webbläsaren, en
-            view. Vi kan påverka datan som visas i viewn dynamiskt genom Data-binding. Det finns två typer,
-            event-binding som låter templaten använda användarinput för att rendera data och property-binding som
-            interpolerar data från komponenten och renderar ut.
-            <br>
-            <br>
-            För data som inte är kopplad till en specifik view eller som används i flera views kan vi skapa så kallade
-            Services. Dessa är uppbyggda som vanliga klasser och används av flera components genom att “injiceras” som
-            providers.
-            <br>
-            <br>
-            Utöver det finns även directives som kan vara strukturella, som *ngFor och ändrar hur DOMen är uppbyggd. De
-            kan också vara kopplade till hur ett element i DOMen ser ut eller beter sig och då kallas de attribute
-            directive.
-        </p>
+        <h3> {{ question }} </h3>
+        <p> {{ answer }} </p>
+        <app-edit></app-edit>
     </div>
     <img src="../../../assets/img/angular_pictorial_diagram.png">
 
