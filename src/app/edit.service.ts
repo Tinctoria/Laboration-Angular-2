@@ -34,8 +34,8 @@ export class EditService {
   }
 
   editQuestion(i: number, question: string, answer: string) {
-    this.questions[i].question= question; 
-    this.questions[i].answer= answer; 
+    this.questions[i-1].question= question; 
+    this.questions[i-1].answer= answer; 
 
 
   }

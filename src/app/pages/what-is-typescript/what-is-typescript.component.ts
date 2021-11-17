@@ -10,9 +10,7 @@ export class WhatIsTypescriptComponent implements OnInit {
 
   constructor(private editService: EditService) { }
   
-  questions = this.editService.getQuestions();
-  question=this.questions[4].question;
-  answer=this.questions[4].answer;
+  question = this.editService.getQuestion(5);
 
   ngOnInit(): void {
   }

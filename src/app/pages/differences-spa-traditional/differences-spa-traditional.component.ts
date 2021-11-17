@@ -10,9 +10,7 @@ export class DifferencesSpaTraditionalComponent implements OnInit {
 
   constructor(private editService: EditService) { }
   
-  questions = this.editService.getQuestions();
-  question=this.questions[5].question;
-  answer=this.questions[5].answer;
+  question = this.editService.getQuestion(6);
 
   ngOnInit(): void {
   }

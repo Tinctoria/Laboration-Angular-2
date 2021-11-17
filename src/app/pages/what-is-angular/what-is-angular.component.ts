@@ -10,9 +10,7 @@ export class WhatIsAngularComponent implements OnInit {
 
   constructor(private editService: EditService) { }
   
-  questions = this.editService.getQuestions();
-  question=this.questions[1].question;
-  answer=this.questions[1].answer;
+  question = this.editService.getQuestion(2);
 
   ngOnInit(): void {
   }

@@ -10,10 +10,7 @@ export class AngularArcitectureComponent implements OnInit {
   
   constructor(private editService: EditService) { }
   
-  questions = this.editService.getQuestions();
-  question=this.questions[3].question;
-  answer=this.questions[3].answer;
-
+  question = this.editService.getQuestion(4);
   
   ngOnInit(): void {
   }

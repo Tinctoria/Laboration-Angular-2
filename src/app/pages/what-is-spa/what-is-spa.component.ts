@@ -10,9 +10,7 @@ export class WhatIsSpaComponent implements OnInit {
 
   constructor(private editService: EditService) { }
   
-  questions = this.editService.getQuestions();
-  question=this.questions[2].question;
-  answer=this.questions[2].answer;
+  question = this.editService.getQuestion(3);
 
   ngOnInit(): void {
   }

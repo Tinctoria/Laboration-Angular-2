@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { EditService } from 'src/app/edit.service';
 import { Question } from 'src/app/question-answer.module';
 
@@ -9,7 +10,7 @@ import { Question } from 'src/app/question-answer.module';
               '../sharedstyles.scss']
 })
 export class EditComponent implements OnInit {
-
+  @ViewChild('f') editForm!: NgForm;
   editMode = false; 
   @Input() id!: number; 
   question!: Question;
@@ -22,8 +23,12 @@ export class EditComponent implements OnInit {
   this.question = this.editService.getQuestion(this.id);
   }
 
-  onSave() {
 
-    
+  onSave(form: NgForm) {
+    const value= form.value;
+    const question=value.question; 
+    const answer= value.answer; 
+    this.editService.editQuestion(this.id, question, answer)
+    this.editMode = false;
   }
 }
